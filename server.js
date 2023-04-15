@@ -6,7 +6,7 @@ const messagesRouter = require('./app/routes/messages');
 
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8088;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
