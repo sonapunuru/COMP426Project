@@ -19,7 +19,7 @@ const MessageForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="author">Author:</label>
+        <label htmlFor="author">Crush:</label>
         <input
           type="text"
           id="author"
@@ -28,7 +28,7 @@ const MessageForm = () => {
         />
       </div>
       <div>
-        <label htmlFor="message">Message:</label>
+        <label htmlFor="message">Message</label>
         <textarea
           id="message"
           value={message}

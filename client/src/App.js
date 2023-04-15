@@ -5,8 +5,8 @@ import MessageForm from './components/MessageForm';
 const App = () => {
   return (
     <div>
-      <MessageList />
       <MessageForm />
+      <MessageList />
     </div>
   );
 };
