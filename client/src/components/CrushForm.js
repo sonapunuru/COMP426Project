@@ -7,7 +7,7 @@ const CrushForm = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    axios.post('/postCrush', { crush, message })
+    axios.post('http://localhost:9000/postCrush', { crush, message })
       .then(response => {
         console.log(response.data);
         setCrush('');

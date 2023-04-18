@@ -8,7 +8,7 @@ function CrushList() {
 
   useEffect(() => {
     // fetch the messages from the server-side API endpoint
-    axios.get('/getCrushes')
+    axios.get('http://localhost:9000/getCrushes')
       .then(response => {
         // update the state with the messages data
         setMessages(response.data);
