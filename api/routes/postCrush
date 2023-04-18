@@ -1,0 +1,14 @@
+const express = require("express");
+const router = express.Router();
+const sqlite3 = require('sqlite3').verbose();
+
+const db = new sqlite3.Database('./database.sqlite');
+
+router.post('/', function(req, res, next) {
+    const { crush, message } = req.body;
+    db.run('INSERT INTO Crushes (Crush, Message) VALUES (?, ?)', [crush, message], function (err) {
+        res.status(201).send('')
+    })
+});
+
+module.exports = router;
